@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: block;
+    background-color: #eee;
+    font-family: lato, sans-serif;
+}
+.main-div {
+    position: relative;
+}
+
+#header {
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0 20px;
+    min-height: 75px;
+    background-color: #eee;
+    
+}
+
+.logo {
+    width: 60vw;
+}
+.logo >img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+#nav-bar {
+    font-weight: 400;
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav-bar >a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 250px;
+    margin-top: 50px;
+}
+.hero-section >h2 {
+    margin-top: 20px;
+}
+
+#email {
+    width:100%;
+    height: 30px;
+    margin-top: 25px;
+    text-align: center;
+    
+}
+
+#submit {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    border: 0;
+    background-color: #f1c40f;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#submit:hover {
+    background-color: #dd910d;
+}
+
+#features .icon{
+    display: flex;
+    height: 125px;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    color: darkorange;
+}
+
+.grid {
+    display: flex;
+    padding: 10px;
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+#howitworks {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#howitworks > iframe {
+    max-width: 560px;
+    width: 100%;
+    border: none;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pricing .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+#pricing .product >div {
+    background-color: #ddd;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+}
+
+#pricing .product >h2 {
+    margin-top: 15px;
+}
+
+#pricing .product >p {
+    margin-top: 15px;
+    
+}
+
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    padding: 0 20px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 20px;
+    max-width: 50%;
+}
+
+.footer {
+    background-color: #ddd;
+    padding: 20px;
+    margin-top: 50px;
+}
+.footer>ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+
+}
+
+.footer >ul>li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.footer >span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+
+@media only screen and (max-width:720px) {
+    #header  {
+        width: 100vw;
+    }
+    #nav-bar >a {
+        display: none;
+    }
+    #howitworks > iframe {
+        width:80%;
+        height:170px;
+    }
+    #pricing {
+        flex-direction: column;
+    }
+    #pricing .product {
+        width: 70%;
+        margin:30px auto;
+    }
+}
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width:720px) {
+    body{
+      font-size:10px;
+    }
+  }
+  html{
+    display:flex;
+    justify-content:space-between;
+  }
+  #nav-bar {
+    position:fixed;
+  } */
