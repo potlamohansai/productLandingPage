@@ -20,8 +20,7 @@ body {
     align-items: center;
     padding: 0 20px;
     min-height: 75px;
-    background-color: #eee;
-    
+    background-color: #eee; 
 }
 
 .logo {
@@ -135,7 +134,7 @@ body {
     align-items: center;
     text-align: center;
     width: calc(100% / 3);
-    margin: 10px;
+    margin: 20px;
     border: 1px solid #000;
     border-radius: 3px;
 }
@@ -213,23 +212,3 @@ body {
         margin:30px auto;
     }
 }
-
-
-
-
-
-
-
-
-/* @media only screen and (max-width:720px) {
-    body{
-      font-size:10px;
-    }
-  }
-  html{
-    display:flex;
-    justify-content:space-between;
-  }
-  #nav-bar {
-    position:fixed;
-  } */
